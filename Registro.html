@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <title>AdoptMe</title>
+    <!--Para responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Para el reset y que el navegador no modifique nada-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="reset.css"as="style">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preload" href="Estilo.css"as="style">
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <section class="navbar">
+        <a href="index.html"><img src="logo adoptme.png" class="logo" href="index.html"></a>
+       <nav class="Principal">
+            <a href="Registro.html" class="NavPrimary">Registrarme</a>
+            <a href="InicioSesion.html">Iniciar sesion</a>
+            <a href="Adoptar.html">Adoptar</a>
+            <a href="Nosotros.html">Sobre nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="PanelNoUsuario.html">Mi panel</a>
+        </nav>  
+    </section>
+    <section class="PresentacionRegistro">
+        <header>
+        </header>
+        <section>
+            <h3>Unete a la comunidad</h3>
+            <h1>REGISTRO</h1>
+            <p>No compres la felicidad, adopta</p>
+        </section>
+    </section>
+    <div class="navHorizontal">
+        <a href="index.html">Página principal/</a>
+        <a href=""> Registro</a>
+    </div>
+    <main class="mainRegistro">
+        <section class="Formulario">
+            <form action="conreg.php" method="POST">
+            <label>Nombre: </label>
+            <input type="text" name="nombre" size="15" title="Es obligatorio ingresar un nombre" required /> <br> <br>  
+            <label> Apellido Materno: </label>     
+            <input type="text" name="apellidoM" size="15" title="Es obligatorio ingresar un apellido" required /> <br> <br>
+            <label> Apellido Paterno: </label>     
+            <input type="text" name="apellidoP" size="15" title="Es obligatorio ingresar un apellido" required /> <br> <br>  
+            <label> Nombre de usuario: </label>     
+            <input type="text" name="usuario" size="15" title="Es obligatorio ingresar un nombre de usuario" required /> <br> <br> 
+            <label> Contraseña: </label>     
+            <input type="password" name="contraseña" onChange="onChange()" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,15}$" size="15" placeholder="8 digitos mínimo, una mayúscula, un símbolo" title="8 digitos mínimo, una mayúscula, un símbolo" required /> <br> <br>
+            <label> Repetir contraseña: </label>     
+            <input type="password" name="contraseña2" onChange="onChange()" size="15"/ title="La contraseña debe coincidir" required> <br> <br>  
+            <label> Correo Electrónico: </label>         
+            <input type="email" name="correo"  size="15"/ title="Es obligatorio ingresar un correo" required> <br> <br>
+            <a href="InicioSesion.html">¿Ya tienes una cuenta?<br></a>  
+            <input class="enviar" type="submit" value="Enviar">
+        </form>
+        <script src="main.js"></script>
+        <div>
+            <img src="580b57fbd9996e24bc43bbcd.png">
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>    

@@ -1,0 +1,764 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /*1rem=10px*/
+}
+body{
+	background-color: white;
+	width: 100%;
+	margin: 0%;
+	font-family: 'Amatic SC', cursive;
+}
+body p{
+	letter-spacing: 0.1rem;
+}
+::selection{
+	background-color: #ADF7B6;
+	color: #242526;
+}
+/*--GLOBAL classes--*/
+.navbar{
+	background-color: white;
+	width: 100%;
+	height: 10rem;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	box-shadow: 0 5px 15px;
+	z-index: 1000;
+}
+.logo{
+	max-width: 8rem;
+	height: 8rem;
+	cursor: pointer;
+	display: flex;
+}
+.Principal{
+	flex: 1;
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	letter-spacing: 0.1rem;
+}
+.Principal a{
+		font-size: 2rem;
+		margin: 0rem 1rem;
+		color: black;
+		text-decoration: none;
+		transition: all 0.2s ease;
+}
+.Principal a:hover{
+	color: #FC7644;
+}
+.Principal .NavPrimary{
+	color: white;
+	background-color: #FF6B6B;
+	padding: 8px 2rem;
+	border-radius: 1rem;
+	transition: all 500ms ease;
+}
+.NavPrimary:hover{
+background-color: whitesmoke;
+color: #FC7644;
+}
+/*----Seccion PRESENTACION---*/
+.Presentacion{
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	background-color: #FFE66D;
+	padding-bottom: 7rem;
+	padding-top: 10rem;
+}
+h1{
+	height: 0;
+	font-size: 12rem;
+	font-weight: 150;
+	color: #1A535C;
+	margin-top: 6rem;
+}
+header h3{
+	height: 0;
+	padding-top: 5rem;
+	padding-right: 20rem;
+	font-size: 3rem;
+	font-weight: 150;
+	color: black;
+}
+.Presentacion p{
+	font-size: 2rem;
+	font-weight: 150;
+	color: black;
+	padding:  8rem 0rem 6rem 0rem;
+}
+.Presentacion a{
+	text-decoration: none;
+}
+.Presentacion form{
+	border-radius: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+	padding: 0 2rem;
+
+}
+.Presentacion input{
+	background: white;
+	height: 3rem;
+	outline: none;
+	border: none;
+}
+.Presentacion button{
+	height: 3rem;
+	width: 6rem;
+	font-size: 1.5rem;
+	text-align: center;
+	border: none;
+	background: transparent;
+	outline: none;
+	line-height: 3rem;
+	color: black;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.Presentacion button:hover{
+	color: #88D18A;
+}
+/*----Seccion MAIN---*/
+main{
+	padding-top: 5rem;
+	justify-content: center;
+	text-align: center;
+}
+main h2{
+	font-size: 5rem;
+	color: #FF6B6B;
+}
+main h3{
+	color: black;
+	font-size: 3rem;
+}
+main p{
+	padding: 0 15rem 0 15rem;
+	font-size: 2rem;
+}
+.tabla{
+	width: 90%;
+	max-width: 800px;
+	display: inline-block;
+	justify-content: space-between;
+	display: flex;
+	text-align: center;
+	color: white;
+	margin: auto;
+}
+.Testimonios{
+	margin-top: 5rem;
+	margin-bottom: 10rem;
+}
+.tabla .izq{
+	background-color: #227c9d;
+	padding-bottom: 5rem;
+	border-radius: 2rem;
+	font-size: 3rem;
+	padding-top: 1rem;
+}
+.tabla div{
+	margin-right: 2rem;
+}
+.izq img{
+	max-width: 25rem;
+	display: flex;
+		border-radius: 2rem;
+		height: 40rem;
+}
+.medio img{
+	max-width: 25rem;
+	display: flex;
+		border-radius: 2rem;
+		height: 40rem;
+}
+.der img{
+	max-width: 25rem;
+	display: flex;
+		border-radius: 2rem;
+		height: 40rem;
+}
+.tabla .medio{
+	background-color: #227c9d;
+		border-radius: 2rem;
+		font-size: 3rem;
+		padding-top: 1rem;
+}
+.tabla .der{
+	background-color: #227c9d;
+		border-radius: 2rem;
+		font-size: 3rem;
+		padding-top: 1rem;
+}
+.back h2{
+	padding-left: 25rem;
+}
+.navbarP{
+	border: white 2px solid;
+	padding: 1.5rem 10rem;
+}
+.navbarP a{
+	left: 2rem;
+	color: #F5F5F5;
+	left: 3rem;
+}
+.navbarP a:hover{
+	color: #88D18A;
+	background: none;
+}
+.Post{
+	padding-top: 5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: #F5F5F5;
+}
+.Index{
+	padding: 0 10rem 0 15rem;
+}
+.Contenido{
+	max-width: 100rem;
+}
+.Contenido .Fecha{
+	border-top: white 2px solid;
+	padding: 1rem 0 2rem 0;
+}
+.Contenido p{
+	color: #B8BBBF;
+	text-align: justify;
+	line-height: 2.5rem;
+}
+.Secundario{
+	padding: 0 15rem 0 10rem;
+	text-align: justify;
+}
+.Secundario p{
+	color: #B8BBBF;
+}
+.izq p{
+	font-size: 1.7rem;
+	padding: 3rem 2rem 2rem 2rem;
+	margin: 0;
+	max-width: 20rem;
+	text-align: justify;
+}
+.medio p{
+	font-size: 1.7rem;
+	padding: 3rem 2rem 2rem 2rem;
+	margin: 0;
+	max-width: 20rem;
+	text-align: justify;
+}
+.der p{
+	font-size: 1.7rem;
+	padding: 3rem 2rem 2rem 2rem;
+	margin: 0;
+	max-width: 20rem;
+	text-align: justify;
+}
+/*----Página ADOPTAR---*/
+
+.PresentacionAdoptar{
+	text-align: center;
+	background-color: #FFE66D;
+	padding-bottom: 3rem;
+	width: 100%;
+	margin: 0;
+	padding-top: 2rem;
+}
+.PresentacionAdoptar h3{
+	font-size: 2rem;
+	padding-top: 0;
+}
+.PresentacionAdoptar h1{
+	font-size: 5rem;
+	font-weight: bold;
+}
+.PresentacionAdoptar p{
+	padding-top: 3rem;
+}
+.mainAdoptar{
+	padding-top: 2rem;
+	padding-right: 5rem;
+	padding-bottom: 5rem;
+	display: inline-block;
+	justify-content: space-between;
+	display: flex;
+	text-align: center;
+}
+.mainAdoptar p{
+	text-align: center;
+}
+.TablaAdoptarMascotas{
+	padding-right: 10rem;
+}
+.TablaAdoptarMascotas table{
+	background: #F5F5F5;
+	border: thistle;
+}
+.navHorizontal{
+	padding: 0;
+	background-color: #FF6B6B;
+	margin: 0;
+	height: 0;
+	top: 0;
+}
+.navHorizontal a{
+	padding: 0;
+	margin: 0;
+	height: 0;
+	top: 0;
+	color: white;
+	letter-spacing: 0.1rem;
+	font-size: 2rem;
+}
+
+/*----Página AdopcionMascotas--*/
+.infonommascota{
+	text-align: center;
+	font-size: 10rem;
+	margin: 0;
+}
+table{
+	width: 600px;
+	margin: 0 auto;
+	background-color: wheat;
+	border: 1px solid #aaa;
+	border-collapse: collapse;
+	margin-bottom: 2rem;
+}
+
+.txtdocu{
+	text-align: center;
+	font-size: 5rem;
+}
+
+.infoforadop{
+	font-size: 5rem;
+	margin-bottom:10px;
+}
+
+.info{
+	text-align: left;
+	font-size: 5rem;
+}
+.FormularioAdopcion{
+	margin-bottom: 5rem;
+}
+.infodocu{
+	font-size: 3rem;
+	background: #B8BBBF;
+	margin-left: 48rem;
+	margin-bottom: 5rem;
+	width: 30rem;
+	border-radius: 5rem;
+	padding: 10rem 5rem 5rem 5rem;
+	align-content: center;
+	text-align: center;
+}
+/*----Página Registro--*/
+.PresentacionRegistro{
+	text-align: center;
+	justify-content: center;
+	background-color: #FFE66D;
+	padding-bottom: 3rem;
+	padding-top: 2rem;
+	margin: 0;
+}
+.mainRegistro{
+	text-align: center;
+}
+.PresentacionRegistro h3{
+	font-size: 2rem;
+	padding-right: 20rem;
+	font-size: 2rem;
+	font-weight: 150;
+	color: black;
+}
+.PresentacionRegistro h1{
+	font-size: 6rem;
+	font-weight: bold;
+	padding-top: 0;
+}
+.PresentacionRegistro p{
+	padding-top: 3rem;
+}
+.navHorizontal{
+	padding: 5rem 25rem 5rem 25rem;
+}
+.Formulario{
+	display:contents;
+	justify-content: center;
+	display: flex;
+	padding-bottom: 10rem;
+	font-size: 2rem;
+	padding-top: 10rem;
+}
+form .enviar{
+	margin-top: 2rem;
+	padding: 1rem 2rem 1rem 2rem;
+	font-size: 1.4rem;
+	color: white;
+	background-color: #FF6B6B;
+	text-decoration: none;
+	border: none;
+	border-radius: 2rem;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+form .enviar:hover{
+	transition: all 0.2s ease;
+}
+.Formulario form{
+	width: 50%;
+}
+footer{
+		background-color: #FFE66D;
+}
+/*----Página Nosotros--*/
+.mainNosotros{
+	justify-content: center;
+	text-align: justify;
+	padding-top: 5rem;
+	margin-top: 0;
+}
+.informacion h2{
+	text-align: center;
+	font-size: 2rem;
+}
+.informacion div{
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	margin: 0rem 8rem 5rem 8rem;
+		box-shadow: 0 15px 40px gray;
+	border-radius: 5rem;
+
+}
+.informacion p{
+	justify-content: center;
+	padding: 0;
+	margin: 0 10rem 2rem 10rem;
+}
+.navHorizontal{
+	background-color: #FF6B6B;
+	padding-left: 10%;
+	padding-right: 0;
+}
+.navHorizontal a{
+	width: 50%;
+	color: white;
+	letter-spacing: 0.1rem;
+	font-size: 2rem;
+}
+/*----Página Contacto--*/
+.PresentacionContacto{
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	background-color: #FFE66D;
+	padding-top: 2rem;
+	margin: 0;
+}
+.PresentacionContacto h1{
+	font-size: 5rem;
+	font-weight: bold;
+}
+.PresentacionContacto h3{
+	padding-top: 0;
+	font-size: 2rem;
+}
+.PresentacionContacto p{
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+}
+.navHorizontal{
+	padding: 5rem 25rem 5rem 25rem;
+}
+.MainContacto{
+	text-align: center;
+}
+.FormularioContacto{
+	display: inline-block;
+	justify-content: center;
+	display: flex;
+	padding-bottom: 10rem;
+	font-size: 2rem;
+	padding-top: 2rem;
+}
+form .enviar:hover{
+	transition: all 0.2s ease;
+	color: #FF6B6B;
+	background-color: #F5F5F5;
+}
+.FormularioContacto form{
+	width: 50%;
+}
+.FormularioContacto form div{
+	padding-bottom: 1rem;
+}
+.FormularioContacto fieldset{
+	border: 0;
+	background-color: #B8BBBF;
+	border-radius: 2rem;
+	padding-top: 5rem;
+	padding-left: 0;
+	margin-right: 2rem;
+	margin-left: 6rem;
+}
+.Formulario fieldset input, textarea{
+	border-style: none;
+	margin-left: 1rem;
+}
+form .enviar{
+	margin-top: 2rem;
+	padding: 1rem 2rem 1rem 2rem;
+	font-size: 1.4rem;
+	color: white;
+	background-color: #FF6B6B;
+	text-decoration: none;
+	border: none;
+	border-radius: 2rem;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.FormularioContacto .Extra img{
+	padding-left: 10rem;
+}
+.FormularioContacto .Extra{
+	padding-top: 5rem;
+	text-align: left;
+}
+footer{
+	background-color: #FFE66D;
+}
+/*----Página Panel--*/
+.PresentacionPanel{
+	text-align: center;
+	justify-content: center;
+	background-color: #FFE66D;
+	padding-bottom: 3rem;
+	padding-top: 1rem;
+	margin: 0;
+}
+.PresentacionPanel h3{
+	font-size: 2rem;
+	padding-right: 20rem;
+	font-size: 2rem;
+	font-weight: 150;
+	color: black;
+}
+.PresentacionPanel h1{
+	font-size: 6rem;
+	font-weight: bold;
+	padding-top: 0;
+}
+.PresentacionPanel h2{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.PresentacionPanel p{
+	padding-top: 2rem;
+}
+.Informacion{
+	text-align: justify;
+	display: inline-block;
+	display: flex;
+}
+.Cuenta-usuario{
+	display: inline;
+	justify-content: left;
+	padding-bottom: 10rem;
+	font-size: 2rem;
+	padding-left: 8rem;
+	margin-right: 5rem;
+	width: 20%;
+	background-color: #B8BBBF;
+	text-align: justify;
+	border-radius: 0 2rem 2rem 0;
+}
+.Cuenta-usuario p{
+	padding: 0;
+}
+.opciones-adopciones{
+	display: inline-block;
+	display: flex;
+	max-width: 50%;
+}
+.opciones-adopciones .imagen-adopciones{
+	max-width: 8rem;
+	border-radius: 0;
+}
+.opciones-adopciones .card-adopciones{
+	margin-left: 5rem;
+	cursor: pointer;
+	
+}
+.opciones-adopciones .card-adopciones a{
+	font-size: 3rem;
+	text-decoration: none;
+	color: #242526;
+}
+.opciones-adopciones .card-adopciones a:hover{
+	color: #FF6B6B;
+}
+/*----Página PanelAdmin--*/
+
+.card-admin-proceso{
+	background-color: #1A535C;
+	border-radius: 5rem;
+	padding: 5rem 5rem 5rem 5rem;
+	margin: 5rem 0 5rem 0;
+	color: #F5F5F5;
+}
+.card-admin-proceso h3{
+	font-size: 10rem;
+}
+.card-admin-proceso p,h3{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+.Opciones-admin{
+	text-align: justify;
+	display: inline-block;
+	display: flex;
+}
+.Opciones{
+	display: inline;
+	justify-content: left;
+	padding-bottom: 10rem;
+	font-size: 2rem;
+	margin-right: 8rem;
+	width: 25%;
+	background-color: #B8BBBF;
+	border-radius: 0 2rem 2rem 0;
+}
+.Opciones a{
+	cursor: pointer;
+	text-decoration: none;
+	color: #242526;
+	padding: 2rem 15rem 2rem 15rem;
+	display: inline-block;
+	display: flex;
+	background-color: #F5F5F5;
+	text-align: center;
+}
+.logoAdmin img{
+	padding-left: 10rem;
+}
+
+.formAlta textarea{
+	border: 1px solid #242526;
+}
+/*----Página BajaMascotas--*/
+.BajaLista{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+.BajaLista .contenido{
+	position: relative;
+	cursor: pointer;
+}
+.cardB img{
+	width: 100%;
+	height: auto;
+}
+
+/*----Página PanelNoUsuario--*/
+.OpcionesNoUsuario{
+	display: inline-block;
+	display: flex;
+	margin-bottom: 10rem;
+}
+.ONUcont{
+	margin: 8rem 2rem 8rem 2rem;
+}
+.OpcionesNoUsuario a{
+	text-decoration: none;
+	color: #F5F5F5;
+	background: #227c9d;
+	padding: 3rem 3rem 3rem 3rem;
+	border-radius: 2rem;
+	font-size: 2rem;
+}
+/*----Página MascotasAdmin--*/
+.OpcionesMascotas{
+	display: inline-block;
+	display: flex;
+	margin-bottom: 10rem;
+}
+.OMcont{
+	margin: 8rem 2rem 8rem 2rem;
+}
+.OpcionesMascotas a{
+	text-decoration: none;
+	color: #F5F5F5;
+	background: #227c9d;
+	padding: 3rem 3rem 3rem 3rem;
+	border-radius: 2rem;
+	font-size: 2rem;
+}
+/*----Página AdopcionesAdmin--*/
+.show{
+	display: block;
+}
+/*----Página UsuariosAdmin--*/
+td{
+	padding: 1rem;
+}
+.btnEliminar{
+	text-decoration: none;
+	color: #F5F5F5;
+	background: #FF6B6B;
+	border-radius: 1rem;
+	padding: 1rem 1rem 1rem 1rem;
+}
+.btnActualizarBaja{
+	text-decoration: none;
+	color: #F5F5F5;
+	background: #227c9d;
+	border-radius: 1rem;
+	padding: 1rem 1rem 1rem 1rem;
+}
+.btnDocumentacion{
+	text-decoration: none;
+	color: #F5F5F5;
+	background: #1A535C;
+	border-radius: 1rem;
+	padding: 1rem 1rem 1rem 1rem;
+}
+.btnPerfil{
+	text-decoration: none;
+	color: #F5F5F5;
+	background: #1A535C;
+	border-radius: 1rem;
+	padding: 1rem 1rem 1rem 1rem;
+}
+.ActualizarPerfil{
+	cursor: pointer;
+
+}
+.btnAdoptar{
+	text-decoration: none;
+	color: #F5F5F5;
+	background: #1A535C;
+	border-radius: 1rem;
+	padding: 1rem 1rem 1rem 1rem;
+}
+.pdfview{
+	margin:auto;
+	display:block;
+	width: 850 px;
+	height:100 vh;
+}

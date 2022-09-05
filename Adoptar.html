@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <title>AdoptMe</title>
+    <!--Para responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Para el reset y que el navegador no modifique nada-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="reset.css"as="style">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preload" href="Estilo.css"as="style">
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <section class="navbar">
+        <a href="index.html"><img src="logo adoptme.png" class="logo" href="index.html"></a>
+       <nav class="Principal">
+            <a href="Registro.html" class="NavPrimary">Registrarme</a>
+            <a href="InicioSesion.html">Iniciar sesion</a>
+            <a href="Adoptar.html">Adoptar</a>
+            <a href="Nosotros.html">Sobre nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="PanelNoUsuario.html">Mi panel</a>
+        </nav>  
+    </section>
+    <section class="PresentacionAdoptar">
+        <header>
+            <h3>Conoce las</h3>
+            <h1>MASCOTAS<br>
+        </header>
+        <section>
+            <p>No compres la felicidad, adopta</p>
+        </section>
+    </section>
+    <div class="navHorizontal">
+        <a href="index.html">Página principal/</a>
+        <a href=""> Adoptar</a>
+    </div>
+    <main class="mainAdoptar">
+        <section class="categoria">
+            <p>Categoría</p>
+            <input type="radio" id="perro" name="mascotas" value="PERRO" checked>
+            <label for="PERRO">Perro</label>
+            <input type="radio" id="gato" name="mascotas" value="GATO">
+            <label for="GATO">Gatos</label>
+            <p>Tamaño</p>
+            <input type="checkbox" id="grandes" name="tamaños" checked>
+            <label for="grandes">Grande</label>
+            <input type="checkbox" id="medianos" name="tamaños">
+            <label for="medianos">Mediano</label>
+            <input type="checkbox" id="pequeños" name="tamaños">
+            <label for="pequeños">Pequeño</label>
+            <p>Edad: <span id="ValorEdad"></span></p>
+            <div class="slidecontainer">
+              <input type="range" min="1" max="25" value="50" class="slider" id="RangoEdad">
+            </div>
+            <button id="Filtro">Filtrar</button>
+        </section>
+        <section>
+            <div class="TablaAdoptarMascotas">
+                <table border="1"> 
+                    <tr>
+                        <td>Foto</td>
+                        <td>Nombre</td>
+                        <td>Edad</td>
+                        <td>Tamaño</td>
+                        <td></td>
+                    </tr>
+                    <?php
+                    $sql="SELECT * from Mascotas";
+                    $result=mysql_query($conexion,$sql);
+
+                    while($mostrar=mysql_fetch_array($result)){
+
+                    ?>
+                    <tr>
+                        <td><?php echo $mostrarr['Foto'] ?></td>
+                        <td><?php echo $mostrarr['Nombre'] ?></td>
+                        <td><?php echo $mostrarr['Edad'] ?></td>
+                        <td><?php echo $mostrarr['Tamaño'] ?></td>
+                        <td>
+                            <a class="btnAdoptar" href="AdoptarMascota.html">Adoptar</a>
+                        </td>
+                    </tr>
+                    <?php
+                }
+                
+                ?>
+
+                </table>
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+            <!--Muuri librería para categorias y animaciones-->
+<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>    

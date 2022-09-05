@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <title>AdoptMe</title>
+    <!--Para responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Para el reset y que el navegador no modifique nada-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="reset.css"as="style">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preload" href="Estilo.css"as="style">
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <section class="navbar">
+        <a href="index.html"><img src="logo adoptme.png" class="logo" href="index.html"></a>
+       <nav class="Principal">
+            <a href="Registro.html" class="NavPrimary">Registrarme</a>
+            <a href="InicioSesion.html">Iniciar sesion</a>
+            <a href="Adoptar.html">Adoptar</a>
+            <a href="Nosotros.html">Sobre nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="PanelNoUsuario.html">Mi panel</a>
+        </nav>  
+    </section>
+    <section class="PresentacionRegistro">
+        <header>
+        </header>
+        <section>
+            <h3>Unete a la comunidad</h3>
+            <h1>FORMULARIO</h1>
+            <p>No compres la felicidad, adopta</p>
+        </section>
+    </section>
+    <div class="navHorizontal">
+        <a href="index.html">Página principal/</a>
+        <a href=""> Formulario</a>
+    </div>
+    <main class="mainFormularioAdopicon">
+        <section class="FormularioAdopcion">
+            <form>
+                <div>
+                    <label  class= "txtdocu"for="">Documentación requerida</label> <br> <br>
+                    <div class="infodocu">
+                        <label for="">Comprobante de domicilio</label> <br>
+                        <label for="">Identificación oficial</label> <br> <br>
+                    </div>
+                        <label for="" style="text-align: center; font-size: 3rem;">Si cuentas con estos documentos, favor subirlos aquí :)</label> <br> <br>
+                    <input atri type="file" name="subirdoc" accept=".pdf,.jpg,.png" multiple />      
+                </div>
+            <input class="enviar" type="submit" value="Enviar">
+        </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>    

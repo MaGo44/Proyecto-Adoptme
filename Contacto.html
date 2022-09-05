@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <title>AdoptMe</title>
+    <!--Para responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Para el reset y que el navegador no modifique nada-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="reset.css"as="style">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preload" href="Estilo.css"as="style">
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <!--Menu de navegación -->
+    <section class="navbar">
+        <img src="logo adoptme.png" class="logo">
+        <!--Menu de navegación se llama Principal-->
+       <nav class="Principal">
+            <a href="Registro.html" class="NavPrimary">Registrarme</a>
+            <a href="InicioSesion.html">Iniciar sesion</a>
+            <a href="Adoptar.html">Adoptar</a>
+            <a href="Nosotros.html">Sobre nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="PanelNoUsuario.html">Mi panel</a>
+        </nav>  
+    </section>
+    <!--PresentaciónContacto hace referencia a la sección del título de la página, eslogan-->
+    <section class="PresentacionContacto">
+        <header>
+            <h3>¿Tienes algo que decirnos?</h3>
+            <h1>CONTACTO<br>
+        </header>
+        <section>
+            <p>No compres la felicidad, adopta</p>
+        </section>
+    </section>
+    <!--La navegación horizontal contiene los links de la ubicación desde la página principal hasta la página actual-->
+    <div class="navHorizontal">
+        <a href="index.html">Página principal/</a>
+        <a href=""> Contacto</a>
+    </div>
+    <!--En mainContacto se encuentra el contenido de la página-->
+    <main class="MainContacto">
+        <section class="FormularioContacto">
+        <form action="Enviarcorreo.php" method="POST" >
+            <fieldset>
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" name="nom" placeholder="Nombre"/>
+                </div>
+                <div>
+                    <label for="">Apellido</label>
+                    <input type="text" name="ape" placeholder="Apellido"/>
+                </div>
+                <div>
+                    <label for="">Telefono</label>
+                    <input type="tel" name="tele" placeholder="Telefono"/>
+                </div>
+                <div>
+                    <label for="">Correo</label>
+                    <input type="email" name="correo" placeholder="mail">
+                </div>
+                <div>
+                    <label for="">Mensaje</label>
+                    <textarea name="mensaje"  cols="30" rows="10"></textarea>
+                </div>
+                <!--Botón para enviar-->
+                <div>
+                    <input type="submit" value="Enviar" class="enviar">
+                </div>
+            </fieldset>
+        </form>
+        <div class="Extra">
+            <p>Teléfono</p>
+            <p>+52 6641947541</p>
+            <p>Sigue nuestras redes sociales</p>
+            <img src="580b57fbd9996e24bc43bbcd.png">
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>    

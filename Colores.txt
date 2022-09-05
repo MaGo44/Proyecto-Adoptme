@@ -1,0 +1,7 @@
+#FC7644 rosa
+#FFE66D amarillo
+#1A535C azul marino
+#227c9d azul
+#B8BBBF gris
+
+
